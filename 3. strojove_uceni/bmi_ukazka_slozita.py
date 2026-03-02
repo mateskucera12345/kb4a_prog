@@ -13,7 +13,7 @@ from sklearn.metrics import ConfusionMatrixDisplay
 X = []  # = vstupy
 Y = []  # = výstupy
 
-with open("data/bmi.csv", "r", encoding="utf-8") as file:
+with open(r"3. strojove_uceni\data\bmi.csv", "r", encoding="utf-8") as file:
     reader = csv.DictReader(file)
     for row in reader:
         height = float(row["Height"])
